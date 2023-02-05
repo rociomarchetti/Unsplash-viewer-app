@@ -1,0 +1,32 @@
+<div id="button-area">
+  <button
+    type="button"
+    (click)="getPhotos()"
+    class="btn btn-outline-dark"
+  >
+    Cargar nuevas fotos
+  </button>
+</div>
+<section id="gallery">
+  <div *ngFor="let item of imagesArr">
+    <div class="gallery-container" (mouseenter)="showText()" (mouseleave)="hideText()">
+      <img src="{{ item.urls.regular }}" class="gallery-img" />
+
+      <div class="description">
+        <div
+          *ngIf="
+            item.alt_description != null;
+            then firstBlock;
+            else secondBlock
+          "
+        ></div>
+        <ng-template #firstBlock>
+          <h6 class="text" [class.shown] = "isShown === true">{{ item.alt_description }}</h6>
+        </ng-template>
+        <ng-template #secondBlock>
+          <h6 class="text" [class.shown] = "isShown === true">Title of Card</h6>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</section>
