@@ -1,29 +1,56 @@
-# Unsplash viewer app: 
+# Unsplash viewer app :camera:: 
 https://unsplash-viewer-app.netlify.app/
 
-Aplicación que conecta con la API de unplash.com para cargar y visualizar un layout de imágenes.
 
-> Breve descripción del proyecto: 
+https://user-images.githubusercontent.com/98389214/224985421-7855b31e-c3d2-442f-9dec-b10c7fec65a8.mp4
 
- La selección de las imágenes es de temática random y se renueva con cada click al botón. Si la imagen provista por la api contiene una descripción de la misma, ésta aparece a modo de título.
 
-## Tecnologías utilizadas
+Application that connects to the unsplash.com API to upload and display an image layout.
 
-HTML5 - CSS3 - ANGULAR 15.1.3 - Node: 16.14.2
+> Brief description of the project: 
 
-Otros:
+ The selection of images is random and is renewed with each click of the button. By clicking on each image we can access to a modal that shows it in an enlarged form. If the image provided by the api contains a description of the image, it appears as a footer inside the modal.
 
-Angular CLI: 15.1.3 || BOOTSTRAP 5
+## :wrench: **Tech used in this project**
 
-## Estructura del proyecto
+![Angular](https://img.shields.io/badge/-Angular-C62828?style=flat-square&logo=angular)
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
 
-Creación de un módulo ("images") con un único componente para la gestión de esta main page. La gestión del módulo se vale de un servicio exclusivo para la gestión de los llamados a la API de UNPLASH (trabajando solo con endpoints de tipo get), y el uso de interfaces para una gestión más clara de sus respuestas. 
+### API Used: 
+![Unsplash.com](https://img.shields.io/badge/Unsplash.com-blue?style=flat-square)
 
 ## Code quality
 
 [![CodeFactor](https://www.codefactor.io/repository/github/rociomarchetti/unsplash-viewer-app/badge)](https://www.codefactor.io/repository/github/rociomarchetti/unsplash-viewer-app)
 
-## Acceso al proyecto 
+## :seedling: **Getting Started with this project**
 
-Luego de su descarga, instalar los módulos de node ('npm install'). 
-A través de Angular CLI y el comando 'ng serve -o' el proyecto estará servido en 'http://localhost:4200/'
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Installation
+
+Clone or fork the Repo, and ensure that you have the [Angular CLI](https://github.com/angular/angular-cli) installed.
+
+In the project directory. Install node modules:
+
+```bash
+npm install
+```
+
++ Run dev server:
+
+```bash
+ng serve --open
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
